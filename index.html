@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Portfolio — Arfan</title>
+
+    <!-- fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- main css -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- particles.js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"
+      defer
+    ></script>
+
+    <meta name="theme-color" content="#071022" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div id="particles-js" aria-hidden="true"></div>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Header -->
+    <header>
+      <div class="brand">
+        <h1>Arfan <span class="accent">Portfolio</span></h1>
+      </div>
+
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+
+      <nav id="nav-menu">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section id="home" class="hero fade-in">
+        <div class="container hero-inner">
+          <h2>
+            Hi, saya <span class="accent" style="color: aqua">Arfan</span>
+          </h2>
+          <div id="typing" class="typing" aria-live="polite"></div>
+          <p class="lead">
+            Portofolio pribadi saya — fokus pada <strong>Web Dev</strong> &
+            <strong>Mobile</strong>.
+          </p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#projects">Lihat Project</a>
+            <a class="btn btn-secondary" href="#skills">Skills</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section id="about" class="reveal">
+        <div class="container about-wrap">
+          <img
+            src="/asset/WhatsApp Image 2025-09-30 at 15.00.08_dfd94dc3.jpg"
+            alt="Foto Arfan"
+            class="about-photo"
+          />
+          <div class="about-text">
+            <h3>Tentang <span style="color: aqua;">Saya</span></h3>
+            <p>
+               <span style="color: aqua;">Arfan Juliano  </span>pelajar kelas 10 di
+              <strong>SMK PLUS PELITA NUSANTARA BOGOR</strong>, jurusan RPL.
+              saya tertarik di bidang pemrograman terutama web & mobile
+              development.
+              Sedang mempelajari pemrograman web & mobile serta praktik
+              pengembangan aplikasi., portofolio ini berisi beberapa project yang
+              telah saya buat.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="reveal">
+        <div class="container">
+          <h3>Projects</h3>
+          <p class="muted small">Klik kartu untuk melihat detail project.</p>
+          <div class="projects-grid">
+            <article
+              class="card"
+              onclick="window.location.href='/project kalk/kalk.html'"
+            >
+              <img
+                src="/asset/image.png"
+                alt="Kalkulator Sederhana"
+                class="card-img"
+              />
+              <h4>Kalkulator Sederhana</h4>
+              <p>Project pertama (HTML/CSS/JS).</p>
+            </article>
+
+            <article
+              class="card"
+              onclick="window.location.href='/portofolio2/index.html'"
+            >
+              <img
+                src="asset/Screenshot 2025-10-27 084237.png"
+                alt="Portofolio Lama"
+                class="card-img"
+              />
+              <h4>Portofolio versi lama</h4>
+              <p>Kurang responsive dan tidak menarik</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+   <div class="skills-grid">
+  <div class="skill" data-name="HTML5">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
+      alt="HTML5 logo"
+      class="skill-logo"
+    />
+  </div>
+  <div class="skill" data-name="CSS3">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg"
+      alt="CSS3 logo"
+      class="skill-logo"
+    />
+  </div>
+  <div class="skill" data-name="JavaScript">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+      alt="JS logo"
+      class="skill-logo"
+    />
+  </div>
+  <div class="skill" data-name="React">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+      alt="React logo"
+      class="skill-logo"
+    />
+  </div>
+  <div class="skill" data-name="Tailwind CSS">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"
+      alt="Tailwind CSS logo"
+      class="skill-logo"
+    />
+  </div>
+  <div class="skill" data-name="GitHub">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+      alt="GitHub logo"
+      class="skill-logo"
+      style="filter: invert(1)"
+    />
+  </div>
+
+  <!-- ✅ Kotlin -->
+  <div class="skill" data-name="Kotlin">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg"
+      alt="Kotlin logo"
+      class="skill-logo"
+    />
+  </div>
+
+  <!-- ✅ Laravel -->
+  <div class="skill" data-name="Laravel">
+   <img
+    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original-wordmark.svg"
+    alt="Laravel logo"
+    class="skill-logo"
+  />
+  </div>
+</div>
+
+
+      <!-- CONTACT -->
+      <section id="contact" class="reveal">
+        <div class="container contact-wrap">
+          <h3>Hubungi Saya</h3>
+          <form
+            id="contactForm"
+            action="mailto:example@example.com"
+            method="POST"
+            enctype="text/plain"
+          >
+            <div class="grid-2">
+              <input type="text" name="name" placeholder="Nama" required />
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <textarea
+              name="message"
+              rows="5"
+              placeholder="Pesan"
+              required
+            ></textarea>
+            <div class="buttons">
+              <a href="#contact" class="btn btn-primary">Kirim Pesan</a>
+              <a
+                href="https://github.com/juliano05-pemula"
+                target="_blank"
+                class="btn btn-secondary"
+                >GitHub</a
+              >
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-content">
+        <div>© 2025 Arfan</div>
+        <div class="footer-socials">
+          <a
+            href="https://github.com/juliano05-pemula"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/aaarfannn_?igsh=c2VhZjFzcmtrcXpz"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scroll top -->
+    <button id="scrollTop" aria-label="Scroll ke atas">↑</button>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
