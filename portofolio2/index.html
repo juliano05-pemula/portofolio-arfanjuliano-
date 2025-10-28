@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Saya</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="js.js"></script>
+  </head>
+  <body>
+    <div id="particles-js"></div>
+    <!-- Script Particles.js -->
+    >
+    <!-- Header -->
+    <header>
+      <h1>Portfolio<span class="highlight">Arfan</span></h1>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button id="toggle-theme">☀</button>
+    </header>
+    <!-- Hero -->
+    <section class="hero">
+      <div>
+        <h2>Hi, Saya <span class="highlight">Arfan</span></h2>
+        <p>
+          Pelajar RPL yang tertarik di
+          <span class="highlight">Cyber Security</span> &
+          <span class="highlight">Web Development</span>
+        </p>
+        <a href="#projects" class="btn">Lihat Project</a>
+      </div>
+    </section>
+    <!-- About -->
+    <section id="about" class="about">
+      <img src="foto saya.jpg" alt="Foto Saya" />
+      <div class="about-text">
+        <h3>Tentang Saya</h3>
+        <p>
+          Saya adalah pelajar kelas 10  di <span class="highlight1">SMK PLUS PELITA NUSANTARA BOGOR jurusan RPL</span> yang sedang mendalami
+          <span class="highlight">bahasa pemogran javascript , php</span>,
+          <span class="highlight"></span>, dan
+          <span class="highlight"> tertarik bikin Website</span>. Portfolio ini
+          adalah salah satu projek pembelajaran saya.
+        </p>
+      </div>
+    </section>
+   
+    <!-- Contact -->
+    <section id="contact" class="contact">
+      <h3>Hubungi Saya</h3>
+      <a href="https://google.com" class="btn">gulugulu</a>
+      <a href="https://github.com/juliano05-pemula" target="_blank" class="btn"
+        >GitHub</a
+      >
+    </section>
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Arfan. Dibuat dengan ❤</p>
+    </footer>
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+    <script>
+      /* Toggle Dark / Light */
+      const toggleBtn = document.getElementById("toggle-theme");
+      toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("dark");
+        toggleBtn.textContent = document.body.classList.contains("dark")
+          ? "🌙"
+          : "☀";
+      });
+
+      /* Particles.js Config */
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80 },
+          size: { value: 3 },
+          move: { speed: 2 },
+          line_linked: { enable: true, distance: 150, color: "#00e6e6" },
+        },
+      });
+    </script>
+  </body>
+</html>
