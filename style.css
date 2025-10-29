@@ -610,3 +610,13 @@ body {
 section {
   margin-bottom: 60px;
 }
+/* ==== FIX PARTICLES ==== */
+#particles-js {
+  position: fixed; /* biar selalu di belakang */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1; /* di bawah semua elemen lain */
+  pointer-events: none; /* biar nggak ganggu klik tombol */
+}
