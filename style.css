@@ -547,3 +547,66 @@ body {
   overflow-x: hidden; /* biar gak bisa geser kanan kiri */
 }
 
+/* ==== FIX LAYOUT DI GITHUB PAGES ==== */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* cegah scroll horizontal */
+}
+
+/* Biar semua element ikut aturan box-sizing */
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* Bungkus utama */
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Perbaiki grid projects */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+  align-items: start;
+  justify-content: center;
+}
+
+/* Pastikan card nggak terlalu lebar */
+.card {
+  width: 100%;
+  max-width: 100%;
+  background: var(--card);
+  border-radius: 12px;
+  padding: 16px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Gambar project */
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+/* Biar teksnya rapi di tengah */
+.card h4,
+.card p {
+  text-align: center;
+}
+
+/* Tambahin spacing bawah */
+section {
+  margin-bottom: 60px;
+}
