@@ -548,14 +548,9 @@ body {
 }
 
 /* ==== FIX LAYOUT DI GITHUB PAGES ==== */
-html,
-body {
-  margin: 0;
-  padding: 0;
+html {
   box-sizing: border-box;
-  overflow-x: hidden; /* cegah scroll horizontal */
 }
-
 /* Biar semua element ikut aturan box-sizing */
 *,
 *::before,
