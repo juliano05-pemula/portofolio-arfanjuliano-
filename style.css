@@ -648,3 +648,61 @@ body.light .footer-socials a:hover {
 .next {
   right: 10px;
 }
+.certificate-slider {
+  position: relative;
+  max-width: 600px; /* biar nggak kegedean */
+  margin: 40px auto;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+}
+
+.certificate-slider .slides img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: none;
+  object-fit: contain;
+}
+
+.certificate-slider .slides img.active {
+  display: block;
+}
+
+.certificate-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 255, 255, 0.4);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 8px 12px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.certificate-slider button:hover {
+  background: rgba(0, 255, 255, 0.7);
+}
+
+.certificate-slider .prev {
+  left: 10px;
+}
+
+.certificate-slider .next {
+  right: 10px;
+}
+
+/* biar responsive di hp */
+@media (max-width: 768px) {
+  .certificate-slider {
+    max-width: 90%;
+  }
+
+  .certificate-slider button {
+    font-size: 18px;
+    padding: 6px 10px;
+  }
+}
