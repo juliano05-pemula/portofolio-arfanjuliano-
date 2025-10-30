@@ -520,4 +520,131 @@ body.light .footer-socials a {
 body.light .footer-socials a:hover {
   box-shadow: 0 0 20px var(--accent), 0 0 40px var(--accent);
 }
+#certificate {
+  margin-top: 80px;
+  text-align: center;
+}
 
+#certificate h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.slider {
+  position: relative;
+  width: 90%;
+  max-width: 600px;
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.slides img {
+  width: 100%;
+  flex-shrink: 0;
+  border-radius: 16px;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.3s;
+  z-index: 10;
+}
+
+.slider:hover button {
+  opacity: 1;
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  #certificate h3 {
+    font-size: 1.4rem;
+  }
+
+  .slider {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .slider button {
+    font-size: 1.2rem;
+    padding: 8px 10px;
+    background: rgba(0, 0, 0, 0.6);
+  }
+
+  .prev {
+    left: 5px;
+  }
+
+  .next {
+    right: 5px;
+  }
+} /* ✅ SLIDER SERTIFIKAT */
+.certificate-slider {
+  position: relative;
+  width: 100%;
+  max-width: 400px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+.slides img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.certificate-slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px 14px;
+  border-radius: 50%;
+  z-index: 10;
+  transition: background 0.3s;
+}
+
+.certificate-slider button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}

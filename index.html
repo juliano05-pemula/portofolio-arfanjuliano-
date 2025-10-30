@@ -27,6 +27,28 @@
     />
   </head>
   <body>
+    <script>
+      const slides = document.querySelector(".slides");
+      const images = document.querySelectorAll(".slides img");
+      const nextBtn = document.querySelector(".next");
+      const prevBtn = document.querySelector(".prev");
+      let currentIndex = 0;
+
+      function showSlide(index) {
+        slides.style.transform = `translateX(${-index * 100}%)`;
+      }
+
+      nextBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex + 1) % images.length;
+        showSlide(currentIndex);
+      });
+
+      prevBtn.addEventListener("click", () => {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        showSlide(currentIndex);
+      });
+    </script>
+
     <div id="particles-js" aria-hidden="true"></div>
     <link rel="stylesheet" href="style.css" />
 
@@ -69,53 +91,64 @@
         </div>
       </section>
 
-      <!-- ABOUT -->
       <section id="about" class="reveal">
-        <div class="container about-wrap">
-          <img src="fotoarfan.jpg" alt="Foto Arfan" class="about-photo" />
-          <div class="about-text">
-            <h3>Tentang <span style="color: aqua">Saya</span></h3>
-            <p>
-              <span style="color: aqua">Arfan Juliano </span>pelajar kelas 10 di
-              <strong>SMK PLUS PELITA NUSANTARA BOGOR</strong>, jurusan RPL.
-              saya tertarik di bidang pemrograman terutama web & mobile
-              development. Sedang mempelajari pemrograman web & mobile serta
-              praktik pengembangan aplikasi., portofolio ini berisi beberapa
-              project yang telah saya buat.
-            </p>
+        <div class="container">
+        <img src="foto-foto/fotoarfan.jpg" alt="Foto Arfan" class="about-photo" />
+          <h2>Tentang <span style="color: aqua;">Saya</span></h2>
+          <p>
+            Saya adalah pelajar di <span style="color: aqua;  "><b>SMK Plus Pelita Nusantara </b></span>Jurusan RPL yang tertarik pada Web Development, Mobile
+            Development, dan Cyber Security. saya telah mengikuti berbagai
+             bootcamp untuk mengembangkan keterampilan saya di bidang ini. Saya
+            memiliki pengalaman dalam membangun beberapa project sederhana.
+          </p>
+
+          <!-- ✅ Tambahkan bagian slider di bawah teks -->
+          <div class="certificate-slider">
+            <button class="prev">❮</button>
+            <div class="slides">
+              <img src="foto-foto/codelamp-roadmap.jpg" alt="Sertifikat 1" />
+              <img src="foto-foto/cysec-sertif.jpg" alt="Sertifikat 2" />
+              <img src="foto-foto/codelamp-ai.jpg" alt="Sertifikat 3" />
+            </div>
+            <button class="next">❯</button>
           </div>
         </div>
       </section>
 
-    <!-- PROJECTS -->
-<section id="projects" class="reveal">
-  <div class="container">
-    <h3>Projects</h3>
-    <p class="muted small">Klik kartu untuk melihat detail project.</p>
-    <div class="projects-grid">
-      <article
-        class="card"
-        onclick="window.location.href='project%20kalk/kalk.html'"
-      >
-        <img src="image.png" alt="Kalkulator Sederhana" class="card-img" />
-        <h4>Kalkulator Sederhana</h4>
-        <p>Project pertama (HTML/CSS/JS).</p>
-      </article>
+      <!-- PROJECTS -->
+      <section id="projects" class="reveal">
+        <div class="container">
+          <h3>Projects</h3>
+          <p class="muted small">Klik kartu untuk melihat detail project.</p>
+          <div class="projects-grid">
+            <article
+              class="card"
+              onclick="window.location.href='/project kalk/kalk.html'"
+            >
+              <img
+                src="foto-foto/image.png"
+                alt="Kalkulator Sederhana"
+                class="card-img"
+              />
+              <h4>Kalkulator Sederhana</h4>
+              <p>Project pertama (HTML/CSS/JS).</p>
+            </article>
 
-      <article
-        class="card"
-        onclick="window.location.href='portofolio2/index.html'"
-      >
-        <img src="projekporto.png" alt="Projek Portofolio" class="card-img" />
-        <h4>Portofolio versi lama</h4>
-        <p>Kurang responsive dan tidak menarik</p>
-      </article>
-    </div>
-  </div>
-</section>
-      
-      <!-- SKILLS --> 
-
+            <article
+              class="card"
+              onclick="window.location.href='/portofolio2/index.html'"
+            >
+              <img
+                src="foto-foto/projekporto.png"
+                alt="Projek Portofolio"
+                class="card-img"
+              />
+              <h4>Portofolio versi lama</h4>
+              <p>Kurang responsive dan tidak menarik</p>
+            </article>
+          </div>
+        </div>
+      </section>
 
       <div class="skills-grid">
         <div class="skill" data-name="HTML5">

@@ -2,8 +2,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // Typing Effect
   const typingEl = document.getElementById("typing");
   const texts = [
-    "Saya pelajar RPL yang tertarik pada Web Development dan Mobile Development.",
     "Portofolio ini adalah salah satu pembelajaran saya untuk praktik.",
+    "ini adalah portofolio yang saya upgrade dari portofolio sebelumnya.",
   ];
   let tIdx = 0,
     chIdx = 0,
@@ -96,7 +96,30 @@ document.addEventListener("DOMContentLoaded", () => {
       retina_detect: true,
     });
   }
+
+  // ✅ Slider Sertifikat
+  const slides = document.querySelector(".slides");
+  const images = document.querySelectorAll(".slides img");
+  const nextBtn = document.querySelector(".next");
+  const prevBtn = document.querySelector(".prev");
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.style.transform = `translateX(${-index * 100}%)`;
+  }
+
+  nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    showSlide(currentIndex);
+  });
+
+  prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    showSlide(currentIndex);
+  });
 });
+
+// ✅ Hamburger menu di luar DOMContentLoaded
 const hamburger = document.getElementById("hamburger");
 const navMenu = document.getElementById("nav-menu");
 
