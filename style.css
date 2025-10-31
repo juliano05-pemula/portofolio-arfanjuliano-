@@ -193,8 +193,18 @@ nav a:hover {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  background: transparent;
+  font-family: inherit;
 }
 
+/* Hilangin gaya default tombol browser */
+button.btn {
+  background: none;
+  border: 2px solid var(--accent);
+  color: var(--accent);
+}
+
+/* Efek background glow */
 .btn::before {
   content: "";
   position: absolute;
@@ -207,16 +217,24 @@ nav a:hover {
   z-index: -1;
 }
 
+/* Hover state */
 .btn:hover::before {
   opacity: 1;
 }
 
-.btn-primary:hover,
-.btn-secondary:hover {
+.btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 0 12px var(--accent);
   color: #031018;
 }
+
+/* Pastikan tombol-tombol sejajar */
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
 
 /* Sections */
 section {

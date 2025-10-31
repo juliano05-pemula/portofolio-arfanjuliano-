@@ -135,3 +135,22 @@ document.querySelectorAll("nav a").forEach((link) => {
     navMenu.classList.remove("active");
   });
 });
+
+  document.getElementById("sendToWhatsApp").addEventListener("click", function() {
+    const name = document.getElementById("name").value;
+    const email = document.getElementById("email").value;
+    const message = document.getElementById("message").value;
+
+    if (name === "" || email === "" || message === "") {
+      alert("Harap isi semua kolom dulu ya!");
+      return;
+    }
+
+    const phoneNumber = "6289505191851"; // nomor WA lo
+    const text = `Halo Arfan, saya ${name}%0AEmail: ${email}%0APesan: ${message}`;
+    const url = `https://wa.me/${phoneNumber}?text=${text}`;
+
+    window.open(url, "_blank");
+  });
+
+

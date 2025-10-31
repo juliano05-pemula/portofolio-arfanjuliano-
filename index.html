@@ -93,13 +93,19 @@
 
       <section id="about" class="reveal">
         <div class="container">
-        <img src="foto-foto/fotoarfan.jpg" alt="Foto Arfan" class="about-photo" />
-          <h2>Tentang <span style="color: aqua;">Saya</span></h2>
+          <img
+            src="foto-foto/fotoarfan.jpg"
+            alt="Foto Arfan"
+            class="about-photo"
+          />
+          <h2>Tentang <span style="color: aqua">Saya</span></h2>
           <p>
-            Saya adalah pelajar di <span style="color: aqua;  "><b>SMK Plus Pelita Nusantara </b></span>Jurusan RPL yang tertarik pada Web Development, Mobile
-            Development, dan Cyber Security. saya telah mengikuti berbagai
-             bootcamp untuk mengembangkan keterampilan saya di bidang ini. Saya
-            memiliki pengalaman dalam membangun beberapa project sederhana.
+            Saya adalah pelajar di
+            <span style="color: aqua"><b>SMK Plus Pelita Nusantara </b></span
+            >Jurusan RPL yang tertarik pada Web Development, Mobile Development,
+            dan Cyber Security. saya telah mengikuti berbagai bootcamp untuk
+            mengembangkan keterampilan saya di bidang ini. Saya memiliki
+            pengalaman dalam membangun beberapa project sederhana.
           </p>
 
           <!-- ✅ Tambahkan bagian slider di bawah teks -->
@@ -131,26 +137,27 @@
                 class="card-img"
               />
               <h4>Kalkulator Sederhana</h4>
-              <p>Project pertama (HTML/CSS/JS).</p>
+              <p>Project pertama saya dengan bantuan Artificial Intelligence ~(HTML/CSS/JS).</p>
             </article>
 
             <article
               class="card"
-              onclick="window.location.href='/portofolio2/index.html'"
+              onclick="window.location.href='/project-quiziz/index.html'"
             >
               <img
-                src="foto-foto/projekporto.png"
+                src="foto-foto/quiziz.png"
                 alt="Projek Portofolio"
                 class="card-img"
               />
-              <h4>Portofolio versi lama</h4>
-              <p>Kurang responsive dan tidak menarik</p>
+              <h4>quiziz by arfan</h4>
+              <p>dibuat berdasarkan pengalaman dan tantangan (HTML/CSS/JS)</p>
             </article>
           </div>
         </div>
       </section>
 
       <div class="skills-grid">
+        <a href="#skills"></a>
         <div class="skill" data-name="HTML5">
           <img
             src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
@@ -218,24 +225,21 @@
       <section id="contact" class="reveal">
         <div class="container contact-wrap">
           <h3>Hubungi Saya</h3>
-          <form
-            id="contactForm"
-            action="mailto:example@example.com"
-            method="POST"
-            enctype="text/plain"
-          >
+          <form id="contactForm">
             <div class="grid-2">
-              <input type="text" name="name" placeholder="Nama" required />
-              <input type="email" name="email" placeholder="Email" required />
+              <input type="text" id="name" placeholder="Nama" required />
+              <input type="email" id="email" placeholder="Email" required />
             </div>
             <textarea
-              name="message"
+              id="message"
               rows="5"
               placeholder="Pesan"
               required
             ></textarea>
             <div class="buttons">
-              <a href="#contact" class="btn btn-primary">Kirim Pesan</a>
+              <button type="button" class="btn btn-primary" id="sendToWhatsApp">
+                Kirim Pesan
+              </button>
               <a
                 href="https://github.com/juliano05-pemula"
                 target="_blank"
