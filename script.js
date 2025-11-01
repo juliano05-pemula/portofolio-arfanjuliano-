@@ -136,7 +136,9 @@ document.querySelectorAll("nav a").forEach((link) => {
   });
 });
 
-  document.getElementById("sendToWhatsApp").addEventListener("click", function() {
+document
+  .getElementById("sendToWhatsApp")
+  .addEventListener("click", function () {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
@@ -146,11 +148,9 @@ document.querySelectorAll("nav a").forEach((link) => {
       return;
     }
 
-    const phoneNumber = "6289505191851"; // nomor WA lo
+    const phoneNumber = "6289505191851"; 
     const text = `Halo Arfan, saya ${name}%0AEmail: ${email}%0APesan: ${message}`;
     const url = `https://wa.me/${phoneNumber}?text=${text}`;
 
     window.open(url, "_blank");
   });
-
-

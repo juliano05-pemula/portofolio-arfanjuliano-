@@ -114,3 +114,4 @@ function showResult() {
 restartBtn.addEventListener("click", startQuiz);
 
 startQuiz();
+6
