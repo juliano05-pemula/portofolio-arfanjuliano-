@@ -311,27 +311,23 @@ section {
   object-fit: cover;
   border-radius: 10px;
 }
-
 /* Skills */
 .skills-section {
   text-align: center;
   margin-top: 60px;
   padding: 0 16px;
 }
-
 .skills-title {
   font-size: 28px;
   font-weight: 700;
   color: var(--text);
   margin-bottom: 6px;
 }
-
 .skills-desc {
   font-size: 15px;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 22px;
 }
-
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
@@ -340,7 +336,6 @@ section {
   margin: 0 auto;
   max-width: 500px; /* biar tetap center */
 }
-
 .skill {
   display: flex;
   align-items: center;
@@ -354,12 +349,10 @@ section {
   transition: transform 0.22s ease, box-shadow 0.22s ease, background 0.5s ease,
     color 0.5s ease;
 }
-
 .skill:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 26px rgba(0, 0, 0, 0.45);
 }
-
 .skill .skill-logo {
   width: 44px;
   height: 44px;
@@ -367,11 +360,9 @@ section {
   filter: grayscale(0.05) contrast(1.05);
   transition: transform 0.3s ease;
 }
-
 .skill:hover .skill-logo {
   transform: scale(1.08);
 }
-
 .skill::after {
   content: attr(data-name);
   position: absolute;
@@ -388,12 +379,9 @@ section {
   transition: opacity 0.18s ease;
   white-space: nowrap;
 }
-
 .skill:hover::after {
   opacity: 1;
-}
-
-/* Responsive fix */
+} /* Responsive fix */
 @media (max-width: 768px) {
   .skills-grid {
     grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
@@ -404,7 +392,6 @@ section {
     height: 36px;
   }
 }
-
 @media (max-width: 480px) {
   .skills-grid {
     max-width: 340px;
@@ -413,8 +400,6 @@ section {
     padding: 0 12px;
   }
 }
-
-
 /* Contact */
 input,
 textarea {
@@ -764,4 +749,20 @@ body.light .footer-socials a:hover {
     font-size: 18px;
     padding: 6px 10px;
   }
+}
+.nama-bahasa {
+  text-align: center;
+  color: #00ffff;
+  font-size: 1.2rem;
+  margin-top: 16px;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+.nama-bahasa {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 16px;
+  color: #555;
+  transition: opacity 0.3s ease;
+  opacity: 0.8;
 }

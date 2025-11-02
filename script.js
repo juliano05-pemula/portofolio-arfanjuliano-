@@ -154,3 +154,13 @@ document
 
     window.open(url, "_blank");
   });
+const icons = document.querySelectorAll(".langs-box .icon");
+  const namaBahasa = document.getElementById("namaBahasa");
+
+  icons.forEach(icon => {
+    icon.addEventListener("click", () => {
+      const nama = icon.getAttribute("data-name");
+      namaBahasa.textContent = nama;
+      namaBahasa.style.opacity = 1;
+    });
+  });
