@@ -651,68 +651,28 @@ body.light .footer-socials a:hover {
 .certificate-slider {
   position: relative;
   width: 100%;
-  max-width: 400px;
-  margin: 20px auto;
-  overflow: hidden;
-  border-radius: 12px;
-}
-
-.slides {
-  display: flex;
-  transition: transform 0.4s ease;
-}
-
-.slides img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.certificate-slider button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.4);
-  border: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-  padding: 8px 14px;
-  border-radius: 50%;
-  z-index: 10;
-  transition: background 0.3s;
-}
-
-.certificate-slider button:hover {
-  background-color: rgba(0, 0, 0, 0.7);
-}
-
-.prev {
-  left: 10px;
-}
-.next {
-  right: 10px;
-}
-.certificate-slider {
-  position: relative;
-  max-width: 600px; /* biar nggak kegedean */
+  max-width: 600px;
   margin: 40px auto;
   overflow: hidden;
   border-radius: 15px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
 }
 
-.certificate-slider .slides img {
+/* Container untuk semua gambar */
+.slides {
+  display: flex;
+  transition: transform 0.4s ease;
+}
+
+/* Gambar-gambar di dalam slider */
+.slides img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
-  display: none;
+  flex-shrink: 0;
+  border-radius: 12px;
   object-fit: contain;
 }
 
-.certificate-slider .slides img.active {
-  display: block;
-}
-
+/* Tombol panah */
 .certificate-slider button {
   position: absolute;
   top: 50%;
@@ -725,19 +685,21 @@ body.light .footer-socials a:hover {
   border-radius: 50%;
   cursor: pointer;
   transition: background 0.3s ease;
+  z-index: 10;
 }
 
 .certificate-slider button:hover {
   background: rgba(0, 255, 255, 0.7);
 }
 
-.certificate-slider .prev {
+/* Posisi tombol */
+.prev {
   left: 10px;
 }
-
-.certificate-slider .next {
+.next {
   right: 10px;
 }
+
 
 /* biar responsive di hp */
 @media (max-width: 768px) {
