@@ -148,7 +148,7 @@ document
       return;
     }
 
-    const phoneNumber = "6289505191851"; 
+    const phoneNumber = "6285122958697"; 
     const text = `Halo Arfan, saya ${name}%0AEmail: ${email}%0APesan: ${message}`;
     const url = `https://wa.me/${phoneNumber}?text=${text}`;
 
