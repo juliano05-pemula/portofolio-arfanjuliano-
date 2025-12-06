@@ -115,3 +115,28 @@ restartBtn.addEventListener("click", startQuiz);
 
 startQuiz();
 6
+function selectAnswer(button, correct) {
+  const allBtns = answerBtns.querySelectorAll("button");
+
+  // Kunci semua tombol setelah menjawab
+  allBtns.forEach(btn => (btn.disabled = true));
+
+  // Jika jawaban user benar
+  if (correct) {
+    button.classList.add("correct");
+    score++;
+  } 
+  // Jika salah
+  else {
+    button.classList.add("wrong");
+
+    // Tunjukkan mana jawaban yang benar
+    allBtns.forEach(btn => {
+      if (questions[currentIndex].answers.find(ans => ans.text === btn.innerText).correct) {
+        btn.classList.add("correct");
+      }
+    });
+  }
+
+  nextBtn.style.display = "block";
+}
